@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8">
+    <title>Hat Elisabeth imemr Recht?</title>
+    <!--
+	=== 		
+	FCK
+	CSS
+    	===
+    -->
+</head>
+<body onload="antwort">
+    <p>Hat Elisabeth immer Recht?</p>
+    <p id="antwort"></p>
+    <button onclick="hatSie()">Sicher?</button>
+
+    <script>
+        function hatSie() {
+            var x = Math.random();
+            if (x >= 0.5){
+  	            document.getElementById("antwort").innerHTML = "Ja";}
+            else {
+	            document.getElementById("antwort").innerHTML = "Nein"; } 	
+        }
+    </script>
+</body>
+</html>
